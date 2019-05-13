@@ -1,0 +1,57 @@
+body {
+  background-color: #bfbfbf;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+form {
+  background-color: #bfbfbf;
+}
+
+.container {
+  background-color: #bfbfbf;
+}
+
+.weatherResults {
+  background-color: hsl(0, 60%, 80%);
+}
+
+.r0 {
+  background-color: hsl(40, 60%, 80%);
+}
+
+.r1 {
+  background-color: hsl(80, 60%, 80%);
+}
+
+.r2 {
+  background-color: hsl(120, 60%, 80%);
+}
+
+.r3 {
+  background-color: hsl(160, 60%, 80%);
+}
+
+.r4 {
+  background-color: hsl(200, 60%, 80%);
+}
+
+.r5 {
+  background-color: hsl(240, 60%, 80%);
+}
+
+.col {
+  border: 1px solid black;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: hsl(300, 60%, 80%);
+  font-size: 30px;
+}
