@@ -13,7 +13,7 @@ document.getElementById("weatherSubmit").addEventListener("click", function(even
       results += '<h1>Today</h1>';
       results += '<h2>Weather in ' + json.name + "</h2>";
       for (let i=0; i < json.weather.length; i++) {
-        results += '<img src="http://openweathermap.org/img/w/' + json.weather[i].icon + '.png"/>';
+        results += '<img src="https://openweathermap.org/img/w/' + json.weather[i].icon + '.png"/>';
       }
       results += "<p>"
       for (let i=0; i < json.weather.length; i++) {
@@ -71,6 +71,5 @@ document.getElementById("weatherSubmit").addEventListener("click", function(even
       forecast += '</div>';
       forecast += '</div>';
       document.getElementById("forecastResults").innerHTML = forecast;
-      console.log(json);
     });
 });
