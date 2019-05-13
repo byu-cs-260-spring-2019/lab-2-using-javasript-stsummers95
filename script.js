@@ -3,8 +3,7 @@ document.getElementById("weatherSubmit").addEventListener("click", function(even
   const value = document.getElementById("weatherInput").value;
   if(value === "")
     return;
-  console.log(value);
-  const url = "http://api.openweathermap.org/data/2.5/weather?q=" + value + ",US&units=imperial" + "&APPID=acac283ff7e535dc0e271bac64c53c4b";
+  const url = "https://api.openweathermap.org/data/2.5/weather?q=" + value + ",US&units=imperial" + "&APPID=acac283ff7e535dc0e271bac64c53c4b";
   fetch(url)
     .then(function(response) {
       return response.json();
@@ -32,7 +31,7 @@ document.getElementById("weatherSubmit").addEventListener("click", function(even
       results += '</div>';
       document.getElementById("weatherResults").innerHTML = results;
     });
-  const url2 = "http://api.openweathermap.org/data/2.5/forecast?q=" + value + ", US&units=imperial" + "&APPID=acac283ff7e535dc0e271bac64c53c4b";
+  const url2 = "https://api.openweathermap.org/data/2.5/forecast?q=" + value + ", US&units=imperial" + "&APPID=acac283ff7e535dc0e271bac64c53c4b";
   fetch(url2)
     .then(function(response) {
       return response.json();
