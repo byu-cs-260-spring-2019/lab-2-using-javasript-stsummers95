@@ -61,7 +61,7 @@ document.getElementById("weatherSubmit").addEventListener("click", function(even
         forecast += '<div class="col">';
         forecast += "<h4>" + moment(json.list[i].dt_txt).format('MMMM Do, h:mm a') + "</h4>";
         forecast += "<p>Temperature: " + json.list[i].main.temp + "</p>";
-        forecast += '<img src="http://openweathermap.org/img/w/' + json.list[i].weather[0].icon + '.png"/>'
+        forecast += '<img src="https://openweathermap.org/img/w/' + json.list[i].weather[0].icon + '.png"/>'
         forecast += '<p>' + json.list[i].weather[0].main + '</p>';
         forecast += '<p>Humidity: ' + json.list[i].main.humidity + '%</p>';
         forecast += '<p>Wind speed: ' + json.list[i].wind.speed + ' mph</p>';
